@@ -11,20 +11,15 @@ body {
 }
 
 :root {
-  --color-light-blue: rgb(173, 216, 230);
-  --color-blue: rgb(49, 97, 224);
-  --color-pink: rgb(255, 192, 203);
-  --color-grey: rgb(211, 211, 211);
-  --color-green: rgb(34, 139, 34);
-  --color-coral: rgb(240, 128, 128);
-  --color-green-whater: rgb(32, 178, 170);
-  --color-tiffany: rgb(127, 255, 212);
-  --color-cold-pink: rgb(255, 182, 193);
+  --color-blue: rgb(37, 94, 233);
+  --color-grey: rgb(246, 246, 246);
+  --color-light-blue: rgb(142, 161, 225);
   --color-black: rgb(35, 39, 42);
 }
 
 a {
   text-decoration: none;
+  color: unset;
 }
 
 /* TEXT STYLES */
@@ -34,23 +29,35 @@ a {
 }
 
 .text-small {
-  font-size: 0.9rem;
-}
-
-h1 {
-  font-size: 1.8rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.2rem;
-}
-h5 {
   font-size: 1rem;
 }
 
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+
 /* UTILITY STYLES */
+
+.section {
+  padding: 8rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 .d-flex {
   display: flex;
@@ -64,7 +71,12 @@ h5 {
   flex-grow: 2;
 }
 
+.align-right {
+  text-align: right;
+}
+
 /* HEADER STYLES*/
+
 header {
   background-color: var(--color-blue);
   padding: 1rem 0;
@@ -72,14 +84,6 @@ header {
 header a {
   color: white;
   font-size: 0.9rem;
-}
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  min-width: 300px;
-  margin: 0 auto;
-  paddin: 0 10px;
 }
 
 .btn {
@@ -92,7 +96,7 @@ header a {
 }
 
 .btn-small {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 0.4rem 1rem;
 }
 
@@ -127,54 +131,76 @@ ul li {
   transition-timing-function: linear;
 }
 
-.logo,
-.call-to-action-btn {
-  width: 20%;
-  padding: 10px;
-}
-
-.call-to-action-btn {
-  text-align: right;
-}
-
 .nav-bar {
-  justify-content: space-between;
   align-items: center;
 }
 
-.links {
-  width: 100%;
-  padding: 10px;
-}
-
-.links ul {
-  justify-content: center;
-}
-
-.section {
-  padding: 30px 0;
-}
+/* JUMBOTRON SECTION */
 
 .jumbotron-section {
-  background-color: var(--color-deep-blue);
+  background-image: url("../img/jumbo.png");
+  background-size: cover;
+  background-position: top;
 }
 
 .jumbotron-content {
-  background-color: var(--color-deep-pink);
-  height: 300px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
   width: 80%;
   margin: 0 auto;
 }
 
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+.btn-black:hover {
+  background-color: rgba(0, 0, 0, 0.719);
+  box-shadow: 0 4px 10px #00000069;
+  transition: all, 300ms;
+  transition-timing-function: linear;
+}
+
+.jumbotron-content p {
+  line-height: 1.8rem;
+}
+
+.jumbotron-content h1 {
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+/* COLUMNS STYLES*/
+
 .small-col {
-  background-color: var(--color-pink);
   flex-grow: 1;
 }
 
 .large-col {
-  background-color: var(--color-blue);
   flex-grow: 2;
-  height: 400px;
+}
+
+.large-col img {
+  max-width: 600px;
+}
+
+.btn-light-blue {
+  background-color: var(--color-light-blue);
+  color: white;
+}
+
+.btn-light-blue:hover {
+  background-color: rgba(142, 161, 225, 0.774);
+  box-shadow: 0 4px 10px #00000069;
+  transition: all, 300ms;
+  transition-timing-function: linear;
 }
 
 .bg-grey {
@@ -186,12 +212,17 @@ ul li {
 }
 
 .cta-content {
-  background-color: var(--color-green);
-  height: 800px;
+  text-align: center;
 }
 
 footer {
   background-color: var(--color-black);
+}
+
+.socials svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
 }
 
 .footer-content {
