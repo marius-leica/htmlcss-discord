@@ -63,6 +63,14 @@ h5 {
   display: flex;
 }
 
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
 .col {
   flex-grow: 1;
 }
@@ -215,8 +223,22 @@ ul li {
   text-align: center;
 }
 
+.wave-1hkxOo {
+  color: var(--color-grey);
+  margin-bottom: -5px;
+}
+
+.upsidedown {
+  transform: rotate(180deg);
+}
+
+/* FOOTER STYLES */
+
 footer {
   background-color: var(--color-black);
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  color: white;
 }
 
 .socials svg {
@@ -225,42 +247,56 @@ footer {
   fill: white;
 }
 
+.flag-img {
+  width: 1.5rem;
+  height: 100%;
+  margin-right: 0.5rem;
+}
+
+#languages {
+  background-color: var(--color-black);
+  color: white;
+  border: unset;
+  margin-bottom: 1.5rem;
+}
+
+footer h3 {
+  padding-bottom: 1.5rem;
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
 .footer-content {
-  padding-bottom: 20px;
+  padding-bottom: 2.5rem;
+  gap: 5rem;
 }
 
 .footer-small-col {
-  background-color: var(--color-coral);
   flex-grow: 1;
 }
 
 .footer-large-col {
   background-color: var(--color-green-whater);
   flex-grow: 2;
-  height: 600px;
-}
-
-.white-border {
-  border: 1px dashed white;
+  gap: 5rem;
 }
 
 .cols {
   width: 25%;
 }
 
-hr {
-  border-top: 1px solid var(--color-grey);
-  margin-bottom: 15px;
+.cols ul li:first-of-type {
+  font-weight: bolder;
+}
+
+.separator {
+  border-top: 1px solid var(--color-blue);
+  padding: 1rem 0;
 }
 
 .after-footer {
-  background-color: var(--color-tiffany);
   justify-content: space-between;
-  padding: 15px 0;
-}
-
-.logo-btn,
-.cta-btn {
-  background-color: var(--color-cold-pink);
-  padding: 5px;
+  padding-top: 0.9rem;
 }
