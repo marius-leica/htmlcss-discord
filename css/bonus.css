@@ -44,3 +44,80 @@
 .upsidedown {
   transform: rotate(180deg);
 }
+
+/* DOWNLOAD PAGE STYLES */
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.color-white {
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-btn {
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.arrow {
+  transform: rotate(90deg);
+}
+
+.small-gap {
+  gap: 1.5rem;
+}
+
+.download-cta {
+  padding: 48px 40px;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.center {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.p-56 {
+  padding: 56px;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.download-img {
+  width: 100%;
+  padding-top: 64px;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 16px;
+  text-align: center;
+  max-height: 600px;
+}
